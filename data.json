@@ -1,0 +1,1058 @@
+{
+	"Gender":
+	{
+		"BF-003":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Male"
+		}
+	,
+		"AF-250":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Male"
+		}
+	,
+		"BF-035":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Female",
+			"Males":"Male",
+			"Females":"Female",
+			"Black":"Male",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Male"
+		}
+	,
+		"WM-038":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"AF-209":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Female"
+		}
+	,
+		"LM-224":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Male",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"BM-219":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Female",
+			"Females":"Male",
+			"Black":"Female",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Male"
+		}
+	,
+		"WF-233":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"BF-240":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Female"
+		}
+	,
+		"LF-249":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Male"
+		}
+	,
+		"AM-224":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Male",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Female",
+			"Random":"Male"
+		}
+	,
+		"LF-240":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Male",
+			"Black":"Female",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"BF-200":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"BF-251":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Female"
+		}
+	,
+		"LM-201":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Male",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"WF-203":
+		{
+			"Ground Truth":"Female",
+			"All Annotators":"Female",
+			"Males":"Female",
+			"Females":"Female",
+			"Black":"Female",
+			"Asian":"Female",
+			"White":"Female",
+			"Latino":"Female",
+			"Random":"Male"
+		}
+	,
+		"AM-219":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Female",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Male"
+		}
+	,
+		"WM-249":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Male",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"BM-213":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Female",
+			"Asian":"Male",
+			"White":"Female",
+			"Latino":"Male",
+			"Random":"Female"
+		}
+	,
+		"AM-214":
+		{
+			"Ground Truth":"Male",
+			"All Annotators":"Male",
+			"Males":"Male",
+			"Females":"Male",
+			"Black":"Female",
+			"Asian":"Male",
+			"White":"Male",
+			"Latino":"Male",
+			"Random":"Male"
+		}
+
+	}
+,
+	"Ethnicity":
+	{
+		"BF-003":
+		{
+			"Ground Truth":"Black",
+			"All Annotators":"Black",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Black",
+			"Asian":"Black",
+			"White":"Black",
+			"Latino":"Black",
+			"Random":"Asian"
+		}
+	,
+		"AF-250":
+		{
+			"Ground Truth":"Asian",
+			"All Annotators":"Asian",
+			"Males":"Asian",
+			"Females":"Black",
+			"Black":"Asian",
+			"Asian":"White",
+			"White":"Asian",
+			"Latino":"Asian",
+			"Random":"Latino"
+		}
+	,
+		"BF-035":
+		{
+			"Ground Truth":"Black",
+			"All Annotators":"Black",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Black",
+			"Asian":"Black",
+			"White":"Black",
+			"Latino":"Black",
+			"Random":"White"
+		}
+	,
+		"WM-038":
+		{
+			"Ground Truth":"White",
+			"All Annotators":"White",
+			"Males":"White",
+			"Females":"White",
+			"Black":"White",
+			"Asian":"White",
+			"White":"White",
+			"Latino":"White",
+			"Random":"Asian"
+		}
+	,
+		"AF-209":
+		{
+			"Ground Truth":"Latino",
+			"All Annotators":"White",
+			"Males":"Asian",
+			"Females":"White",
+			"Black":"Asian",
+			"Asian":"White",
+			"White":"White",
+			"Latino":"Asian",
+			"Random":"Asian"
+		}
+	,
+		"LM-224":
+		{
+			"Ground Truth":"White",
+			"All Annotators":"White",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Black",
+			"Asian":"Black",
+			"White":"Black",
+			"Latino":"White",
+			"Random":"Black"
+		}
+	,
+		"BM-219":
+		{
+			"Ground Truth":"Asian",
+			"All Annotators":"Latino",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Asian",
+			"Asian":"Asian",
+			"White":"Latino",
+			"Latino":"Asian",
+			"Random":"Black"
+		}
+	,
+		"WF-233":
+		{
+			"Ground Truth":"White",
+			"All Annotators":"White",
+			"Males":"White",
+			"Females":"White",
+			"Black":"Asian",
+			"Asian":"Latino",
+			"White":"White",
+			"Latino":"White",
+			"Random":"Black"
+		}
+	,
+		"BF-240":
+		{
+			"Ground Truth":"Black",
+			"All Annotators":"Black",
+			"Males":"White",
+			"Females":"Black",
+			"Black":"Black",
+			"Asian":"Black",
+			"White":"White",
+			"Latino":"Black",
+			"Random":"Black"
+		}
+	,
+		"LF-249":
+		{
+			"Ground Truth":"Latino",
+			"All Annotators":"Latino",
+			"Males":"Black",
+			"Females":"Latino",
+			"Black":"Asian",
+			"Asian":"White",
+			"White":"Asian",
+			"Latino":"Asian",
+			"Random":"Asian"
+		}
+	,
+		"AM-224":
+		{
+			"Ground Truth":"Asian",
+			"All Annotators":"Asian",
+			"Males":"Asian",
+			"Females":"Asian",
+			"Black":"Asian",
+			"Asian":"Black",
+			"White":"Asian",
+			"Latino":"Asian",
+			"Random":"Latino"
+		}
+	,
+		"LF-240":
+		{
+			"Ground Truth":"Latino",
+			"All Annotators":"Latino",
+			"Males":"White",
+			"Females":"White",
+			"Black":"Asian",
+			"Asian":"Asian",
+			"White":"White",
+			"Latino":"Latino",
+			"Random":"Latino"
+		}
+	,
+		"BF-200":
+		{
+			"Ground Truth":"Black",
+			"All Annotators":"Black",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Asian",
+			"Asian":"Black",
+			"White":"White",
+			"Latino":"Asian",
+			"Random":"Latino"
+		}
+	,
+		"BF-251":
+		{
+			"Ground Truth":"Black",
+			"All Annotators":"Black",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Black",
+			"Asian":"Black",
+			"White":"Black",
+			"Latino":"Black",
+			"Random":"Asian"
+		}
+	,
+		"LM-201":
+		{
+			"Ground Truth":"White",
+			"All Annotators":"White",
+			"Males":"Black",
+			"Females":"White",
+			"Black":"White",
+			"Asian":"White",
+			"White":"White",
+			"Latino":"White",
+			"Random":"Latino"
+		}
+	,
+		"WF-203":
+		{
+			"Ground Truth":"Asian",
+			"All Annotators":"Latino",
+			"Males":"Latino",
+			"Females":"White",
+			"Black":"Asian",
+			"Asian":"Asian",
+			"White":"Latino",
+			"Latino":"Asian",
+			"Random":"Latino"
+		}
+	,
+		"AM-219":
+		{
+			"Ground Truth":"Latino",
+			"All Annotators":"Latino",
+			"Males":"Latino",
+			"Females":"Latino",
+			"Black":"Asian",
+			"Asian":"Asian",
+			"White":"Latino",
+			"Latino":"Latino",
+			"Random":"Black"
+		}
+	,
+		"WM-249":
+		{
+			"Ground Truth":"White",
+			"All Annotators":"White",
+			"Males":"Black",
+			"Females":"White",
+			"Black":"White",
+			"Asian":"Latino",
+			"White":"White",
+			"Latino":"White",
+			"Random":"White"
+		}
+	,
+		"BM-213":
+		{
+			"Ground Truth":"Black",
+			"All Annotators":"Black",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Black",
+			"Asian":"Black",
+			"White":"Black",
+			"Latino":"Black",
+			"Random":"Latino"
+		}
+	,
+		"AM-214":
+		{
+			"Ground Truth":"Black",
+			"All Annotators":"Black",
+			"Males":"Black",
+			"Females":"Black",
+			"Black":"Black",
+			"Asian":"Black",
+			"White":"Black",
+			"Latino":"Latino",
+			"Random":"Asian"
+		}
+
+	}
+,
+	"Attract":
+	{
+		"BF-003":
+		{
+			"Ground Truth":"Medium",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"High",
+			"Black":"High",
+			"Asian":"Low",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"AF-250":
+		{
+			"Ground Truth":"Medium",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"Medium",
+			"Random":"Medium"
+		}
+	,
+		"BF-035":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"Low",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"WM-038":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"High",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"AF-209":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"Medium",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"Low",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"LM-224":
+		{
+			"Ground Truth":"Medium",
+			"All Annotators":"High",
+			"Males":"Low",
+			"Females":"Medium",
+			"Black":"Low",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Medium"
+		}
+	,
+		"BM-219":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"High",
+			"Males":"High",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"Medium",
+			"Random":"Medium"
+		}
+	,
+		"WF-233":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"Low",
+			"Females":"High",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"BF-240":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"High",
+			"Females":"High",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"LF-249":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"Low",
+			"Males":"High",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"AM-224":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"Low",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"LF-240":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"Medium",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"BF-200":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"High",
+			"Males":"Low",
+			"Females":"High",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"BF-251":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"High",
+			"Females":"High",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"LM-201":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"High",
+			"Males":"Low",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"Medium",
+			"Random":"High"
+		}
+	,
+		"WF-203":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"High",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"AM-219":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"Low",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Medium"
+		}
+	,
+		"WM-249":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"Low",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Medium"
+		}
+	,
+		"BM-213":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"AM-214":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Medium",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Medium"
+		}
+
+	}
+,
+	"Trust":
+	{
+		"BF-003":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"Medium",
+			"Males":"Low",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"Low",
+			"White":"Medium",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"AF-250":
+		{
+			"Ground Truth":"Medium",
+			"All Annotators":"High",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"Medium",
+			"Asian":"Low",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"High"
+		}
+	,
+		"BF-035":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"High",
+			"Males":"Low",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Medium",
+			"Latino":"High",
+			"Random":"Low"
+		}
+	,
+		"WM-038":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"High",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Low",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"AF-209":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"Medium",
+			"Males":"High",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"Low",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"LM-224":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Medium",
+			"Latino":"Medium",
+			"Random":"Low"
+		}
+	,
+		"BM-219":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"High",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Low"
+		}
+	,
+		"WF-233":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Low",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"High"
+		}
+	,
+		"BF-240":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"High",
+			"Females":"High",
+			"Black":"High",
+			"Asian":"High",
+			"White":"High",
+			"Latino":"Medium",
+			"Random":"High"
+		}
+	,
+		"LF-249":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Low",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Medium"
+		}
+	,
+		"AM-224":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Medium",
+			"Latino":"High",
+			"Random":"Medium"
+		}
+	,
+		"LF-240":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Low"
+		}
+	,
+		"BF-200":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Medium",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"BF-251":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"High",
+			"Males":"High",
+			"Females":"High",
+			"Black":"High",
+			"Asian":"High",
+			"White":"High",
+			"Latino":"Medium",
+			"Random":"High"
+		}
+	,
+		"LM-201":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"High",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Low"
+		}
+	,
+		"WF-203":
+		{
+			"Ground Truth":"High",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"Low",
+			"White":"High",
+			"Latino":"High",
+			"Random":"Low"
+		}
+	,
+		"AM-219":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"WM-249":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Low",
+			"Males":"Low",
+			"Females":"Low",
+			"Black":"Low",
+			"Asian":"High",
+			"White":"Low",
+			"Latino":"Medium",
+			"Random":"Low"
+		}
+	,
+		"BM-213":
+		{
+			"Ground Truth":"Low",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Medium",
+			"Black":"Medium",
+			"Asian":"High",
+			"White":"Low",
+			"Latino":"High",
+			"Random":"High"
+		}
+	,
+		"AM-214":
+		{
+			"Ground Truth":"Medium",
+			"All Annotators":"Medium",
+			"Males":"Medium",
+			"Females":"Low",
+			"Black":"High",
+			"Asian":"High",
+			"White":"Medium",
+			"Latino":"Low",
+			"Random":"High"
+		}
+
+	}
+
+}
