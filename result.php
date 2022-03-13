@@ -55,27 +55,55 @@ $i = 0;
 
 ?>
 
-<?php require 'includes/header-result.php' ?>
-
-<header>
-    <h1 class="display-3 text-center p-3"><?php echo $classification;?></h1>
-</header>
+<?php require 'includes/header.php' ?>
 
 <div class="container p-3">
-    <h2 class="display-6">Results</h2>
-	<div class="row">
-		<div class="col-sm-1 col-md-2 col-xl-3"></div>
-		<div class="col-sm-10 col-md-8 col-xl-6">
-			<img src="img/<?php echo $user;?>.jpg" class="img-fluid" alt="user-image">
-		</div>
-			<div class="col-sm-1 col-md-2 col-xl-3"></div>
-	</div>	
+    <h2>Select image:</h2>
+    <div class="text-center">
+        <div class="text-center hover-effect">
+            <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-responsive mx-auto" alt="user-image" width="500"></a>
+            <div class="overlay">
+                <a class="info" href="gallery.php">Click to change</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-5"></div>
+
+    <h2>Select classification task:</h2>
+    <div class="row text-center">
+    <?php foreach($decoded_json as $class_2 => $val_2)  { ?>
+        <?php if($class_2 == $classification)  { ?>
+            <div class="col">
+                <form method='post' action="result.php">
+                    <input type='hidden' name='user' value='<?php echo $user;?>' />
+                    <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
+                    <input class="btn btn-outline-secondary w-100" type="submit" value='<?php echo $class_2?>'>
+                </form>
+            </div>
+        <?php } else {?>
+            <div class="col">
+                <form method='post' action="result.php">
+                    <input type='hidden' name='user' value='<?php echo $user;?>' />
+                    <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
+                    <input class="btn btn-secondary border-0 w-100" type="submit" value='<?php echo $class_2?>'>
+                </form>
+            </div>
+        <?php } ?>
+    <?php } ?>
+
+    </div>
+
+    <div class="py-5"></div>
+
+    <h2>Results:</h2>
+
     <table class="table table-light text-center">
         <?php foreach($user_array as $key => $val) {?>
             <?php if ($key == "Ground Truth") { ?>
                 <tr>
                     <th scope="row" class="w-50"><?php echo $key;?></th>
-                    <td class="w-50" id=""><?php echo $val;?></td>
+                    <td class="w-50 <?php echo classColor($val); ?>" id=""><?php echo $val;?></td>
                 </tr>
             <?php } ?>
         <?php } ?>
@@ -85,18 +113,21 @@ $i = 0;
     <br/>
 
     <table class="table table-striped table-bordered text-center">
-        <thead>Models</thead>
+        <thead><span class="fw-bold">Models</span></thead>
         <tbody>
-    <?php foreach($user_array as $key => $val) { ?>
-        <?php if ($key != "Ground Truth") { $i++; ?>
-            <tr>
-                <th scope="row" class="w-50"><?php echo $key;?></th>
-                <td class="w-50 <?php echo classColor($val); ?>" id="<?php echo $i;?>"><?php echo $val;?></td>
-            </tr>
-                <?php } ?>
+        <?php foreach($user_array as $key => $val) { ?>
+            <?php if ($key != "Ground Truth") { $i++; ?>
+                <tr>
+                    <td class="w-50"><?php echo $key;?></td>
+                    <td class="w-50 <?php echo classColor($val); ?>" id="<?php echo $i;?>"><?php echo $val;?></td>
+                </tr>
             <?php } ?>
+        <?php } ?>
         </tbody>
     </table>
+
+    <div class="py-5"></div>
+
 </div>
 
 <?php require 'includes/footer.html' ?>
