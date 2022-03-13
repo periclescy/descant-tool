@@ -39,4 +39,6 @@ $chosen_classification = "Gender";
     </div>
 </div>
 
+<div class="py-5">&nbsp;</div>
+
 <?php require 'includes/footer.html' ?>

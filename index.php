@@ -23,7 +23,7 @@ $chosen_classification = "Gender";
                 <p>This tool was developed in the framework of the DESCANT: “Detecting Stereotypes in Human Computational
                     Tasks” research project funded by the Research and Innovation Foundation of Cyprus under the
                     RESTART 2016-2020-EXCELLENCE HUBS call. For more information about DESCANT visit the project’s website: <br/>
-                    <a href="https://www.cyens.org.cy/en-gb/research/projects/descant-detecting-stereotypes-in-human-computati/">https://www.cyens.org.cy/en-gb/research/projects/descant-detecting-stereotypes-in-human-computati/</a>
+                    <a href="https://www.cyens.org.cy/en-gb/research/projects/descant-detecting-stereotypes-in-human-computati/" target="_blank">https://www.cyens.org.cy/en-gb/research/projects/descant-detecting-stereotypes-in-human-computati/</a>
                 </p>
             </div>
             <div class="col-md-6">
@@ -32,8 +32,9 @@ $chosen_classification = "Gender";
                 annotated by different groups of annotators.
             </p>
             </div>
-        </div>
-        <div class="row py-3">
+
+            <div class="py-5">&nbsp;</div>
+
             <div class="col text-center">
                 <form method='post' action="result.php">
                     <input type='hidden' name='user' value='<?php echo $chosen_key;?>' />
@@ -42,8 +43,8 @@ $chosen_classification = "Gender";
                 </form>
             </div>
         </div>
-        <div class="py-5"></div>
-
     </div>
+
+    <div class="py-5">&nbsp;</div>
 
 <?php require 'includes/footer.html' ?>
