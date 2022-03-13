@@ -15,7 +15,7 @@ $chosen_classification = "Gender";
 <?php require 'includes/header.php' ?>
 
 <header>
-    <h1 class="display-1 p-3 text-center">DESCANT Demo Tool</h1>
+    <h1 class="display-3 py-3 text-center">DESCANT Demo Tool</h1>
 </header>
 
 <div class="container-fluid p-3">

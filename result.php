@@ -20,7 +20,8 @@ else {
 }
 
 // Calculate cell background color based on value
-function classColor($str_value) {
+function classColor($str_value): string
+{
 
     switch ($str_value) {
         case "Male":
@@ -51,7 +52,8 @@ function classColor($str_value) {
 }
 
 // Calculate tooltip text based on value
-function classTooltip($str_value) {
+function classTooltip($str_value): string
+{
 
     switch ($str_value) {
         case "All Annotators":
@@ -94,7 +96,7 @@ $i = 0;
     <h2>Select image:</h2>
     <div class="text-center">
         <div class="text-center hover-effect">
-            <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-responsive mx-auto" alt="user-image" width="500"></a>
+            <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
         </div>
     </div>
 
@@ -143,7 +145,7 @@ $i = 0;
         </div>
     </div>
 
-    <div class="py-3">&nbsp;</div>
+    <div class="py-2">&nbsp;</div>
 
     <div class="row">
         <div class="col-1"><h3 class="vertical-text fs-2">Models</h3></div>

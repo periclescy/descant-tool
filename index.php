@@ -9,9 +9,13 @@ $ethnicity = $decoded_json["Ethnicity"];
 $attract = $decoded_json["Attract"];
 $trust = $decoded_json["Trust"];
 
-$chosen_key = "BF-003";
-$chosen_classification = "Gender";
+// Calculate first classification and user.
+$firstKey = array_key_first($decoded_json);
+$array_firstKey = $decoded_json[$firstKey];
+$firstKey_in_array_firstKey = array_key_first($array_firstKey);
 
+$chosen_classification = $firstKey;
+$chosen_user = $firstKey_in_array_firstKey;
 ?>
 
 <?php require 'includes/header.php' ?>
@@ -37,7 +41,7 @@ $chosen_classification = "Gender";
 
             <div class="col text-center">
                 <form method='post' action="result.php">
-                    <input type='hidden' name='user' value='<?php echo $chosen_key;?>' />
+                    <input type='hidden' name='user' value='<?php echo $chosen_user;?>' />
                     <input type='hidden' name='classification' value='<?php echo $chosen_classification;?>' />
                     <input class="btn btn-primary btn-lg w-50 fs-4" type="submit" value="Get Started">
                 </form>
