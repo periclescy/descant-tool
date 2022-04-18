@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DESCANT Demo Tool</title>
+    <title>Descant demo - Data bias and classification</title>
+    <meta name="description" content="DESCANT aims to identify bias, in the form of the expression of social stereotypes,  in datasets produced via paid micro-task crowdsourcing and to develop a set of guidelines to practitioners. The aim of this demo is to concretely illustrate, and allow users to explore, the impact of socially biased data collected from a crowdsourcing platform when machine learning models are trained with these datasets.">
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
