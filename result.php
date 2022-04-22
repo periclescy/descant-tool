@@ -153,8 +153,10 @@ function classParagraph($str_value): string
     </button>
 
     <div class="py-3">&nbsp;</div>
+    <div class="d-none text-center py-5" id="loader-presentation">
+        <div class="spinner-border" role="status"></div>
+    </div>
 
-    <div class="spinner-border d-none" id="loader-presentation" role="status"></div>
 
     <div class="d-none" id="results-presentation">
 
