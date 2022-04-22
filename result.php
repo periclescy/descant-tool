@@ -109,7 +109,7 @@ function classParagraph($str_value): string
 
 <?php require 'includes/header.php' ?>
 
-<p class="container p-3">
+<div class="container p-3">
     <h2>Select image:</h2>
     <div class="text-center">
         <div class="text-center hover-effect">
@@ -186,8 +186,8 @@ function classParagraph($str_value): string
             </div>
         </div>
 
-    </div>
+        <div class="py-5">&nbsp;</div>
 
-    <div class="py-5">&nbsp;</div>
+    </div>
 
 <?php require 'includes/footer.html' ?>
