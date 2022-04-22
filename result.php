@@ -169,23 +169,25 @@ function classParagraph($str_value): string
 
     <div class="row">
         <div class="col-1"><h3 class="vertical-text fs-2">Models</h3></div>
-        <div class="col-11">
-            <table class="table table-bordered text-center">
-                <tbody>
-                    <?php $i = 0; ?>
-                    <?php foreach($user_array as $key => $val) { ?>
-                        <?php if ($key != "Ground Truth") { $i++; ?>
-                        <tr>
-                            <td class="w-50" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $key;?></td>
-                            <td class="w-50 <?php echo classColor($val);?>" id="<?php echo $i;?>" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $val;?></td>
-                        </tr>
+            <div class="col-11">
+                <table class="table table-bordered text-center">
+                    <tbody>
+                        <?php $i = 0; ?>
+                        <?php foreach($user_array as $key => $val) { ?>
+                            <?php if ($key != "Ground Truth") { $i++; ?>
+                            <tr>
+                                <td class="w-50" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $key;?></td>
+                                <td class="w-50 <?php echo classColor($val);?>" id="<?php echo $i;?>" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $val;?></td>
+                            </tr>
+                            <?php } ?>
                         <?php } ?>
-                    <?php } ?>
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <div class="py-5">&nbsp;</div>
+    </div>
+
+    <div class="py-5">&nbsp;</div>
 
 <?php require 'includes/footer.html' ?>
