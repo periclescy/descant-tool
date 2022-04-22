@@ -105,7 +105,6 @@ function classParagraph($str_value): string
     }
     return $return_class;
 }
-
 ?>
 
 <?php require 'includes/header.php' ?>
