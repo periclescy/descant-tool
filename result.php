@@ -110,16 +110,18 @@ function classParagraph($str_value): string
 <?php require 'includes/header.php' ?>
 
 <div class="container p-3">
-    <h2>Select image:</h2>
+    <h2>1. Input image:</h2>
+    <blockquote>Click on the image to select another image</blockquote>
     <div class="text-center">
         <div class="text-center hover-effect">
             <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
         </div>
     </div>
 
-    <div class="py-5">&nbsp;</div>
+    <div class="py-3">&nbsp;</div>
 
-    <h2>Select classification task:</h2>
+    <h2>2. Classification task</h2>
+    <blockquote>Select a Classification task:</blockquote>
     <div class="row text-center">
     <?php foreach($decoded_json as $class_2 => $val_2)  { ?>
         <?php if($class_2 == $classification)  { ?>
@@ -143,51 +145,61 @@ function classParagraph($str_value): string
 
     </div>
 
-    <div class="py-5">&nbsp;</div>
+    <div class="py-3">&nbsp;</div>
 
-    <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowdworker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
-    <p><?php echo classParagraph($classification); ?></p>
+    <h2>3. Results</h2>
+    <button class="btn btn-primary" type="button" id="results-button">
+        Train models and show Results
+    </button>
 
-    <h2>Results:</h2>
-    <div class="row">
-        <div class="col-1">&nbsp;</div>
-        <div class="col-11">
-            <table class="table table-light text-center">
-                <?php foreach($user_array as $key => $val) {?>
-                    <?php if ($key == "Ground Truth") { ?>
-                        <tr>
-                            <th scope="row" class="w-50"><?php echo $key;?></th>
-                            <td class="w-50 <?php echo classColor($val); ?>"><?php echo $val;?></td>
-                        </tr>
-                    <?php } ?>
-                <?php } ?>
-            </table>
-        </div>
-    </div>
+    <div class="py-3">&nbsp;</div>
 
-    <div class="py-2">&nbsp;</div>
+    <div class="spinner-border d-none" id="loader-element" role="status"></div>
 
-    <div class="row">
-        <div class="col-1"><h3 class="vertical-text fs-2">Models</h3></div>
+    <div class="d-none" id="show-results">
+
+        <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowdworker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
+        <p><?php echo classParagraph($classification); ?></p>
+
+        <div class="row">
+            <div class="col-1">&nbsp;</div>
             <div class="col-11">
-                <table class="table table-bordered text-center">
-                    <tbody>
-                        <?php $i = 0; ?>
-                        <?php foreach($user_array as $key => $val) { ?>
-                            <?php if ($key != "Ground Truth") { $i++; ?>
+                <table class="table table-light text-center">
+                    <?php foreach($user_array as $key => $val) {?>
+                        <?php if ($key == "Ground Truth") { ?>
                             <tr>
-                                <td class="w-50" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $key;?></td>
-                                <td class="w-50 <?php echo classColor($val);?>" id="<?php echo $i;?>" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $val;?></td>
+                                <th scope="row" class="w-50"><?php echo $key;?></th>
+                                <td class="w-50 <?php echo classColor($val); ?>"><?php echo $val;?></td>
                             </tr>
-                            <?php } ?>
                         <?php } ?>
-                    </tbody>
+                    <?php } ?>
                 </table>
             </div>
         </div>
 
-        <div class="py-5">&nbsp;</div>
+        <div class="py-2">&nbsp;</div>
 
+        <div class="row">
+            <div class="col-1"><h3 class="vertical-text fs-2">Models</h3></div>
+                <div class="col-11">
+                    <table class="table table-bordered text-center">
+                        <tbody>
+                            <?php $i = 0; ?>
+                            <?php foreach($user_array as $key => $val) { ?>
+                                <?php if ($key != "Ground Truth") { $i++; ?>
+                                <tr>
+                                    <td class="w-50" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $key;?></td>
+                                    <td class="w-50 <?php echo classColor($val);?>" id="<?php echo $i;?>" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $val;?></td>
+                                </tr>
+                                <?php } ?>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="py-5">&nbsp;</div>
+        </div>
     </div>
 
 <?php require 'includes/footer.html' ?>
