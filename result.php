@@ -188,6 +188,4 @@ function classParagraph($str_value): string
 
         <div class="py-5">&nbsp;</div>
 
-    </div>
-
 <?php require 'includes/footer.html' ?>
