@@ -93,13 +93,13 @@ function classParagraph($str_value): string
         case "Gender":
             $return_class = 'The “female probability” (number of participants who indicated female gender, divided by number of people who rated the person depicted in the image) was compared to the “male probability” (vice versa for male gender) as indicated in the original Chicago Face Database, from where this image was retrieved. The average number of raters per image across the whole dataset was 47. The higher probability gender was selected as <span class="fw-bold">ground</span> truth for the <span class="fw-bold">gender</span> of the person in the image.';
             break;
-        case "Ethnicity":
+        case "Race":
             $return_class = 'The “Asian probability” (number of participants who indicated Asian race divided by number of people who rated the person depicted in the image) was compared to the “Black”, “Latino”, and “White probability” scores (which consist of the same calculation, for each respective race) as indicated in the original Chicago Face Database, from where this image was retrieved. The average number of raters per image across the whole dataset was 47. The highest probability race was selected as <span class="fw-bold">ground truth</span> for the <span class="fw-bold">race</span> of the person in the image.';
             break;
-        case "Trust":
+        case "Trustworthiness":
             $return_class = 'When creating the original Chicago Face Database, from where this image was retrieved, participants were asked to rate the person in the image for how trustworthy they seemed “with respect to other people of the same race and gender” on a Likert scale (1 = Not at all; 7 = Extremely). The mean score for the image, as reported in the CFD, was selected as the <span class="fw-bold">ground truth</span> for the <span class="fw-bold">trustworthiness</span> of the person in the image. The average number of raters per image across the whole dataset was 47. A score of 1-3 is categorized as Low, 3-5 as Medium, and 5-7 as High.';
             break;
-        case "Attract":
+        case "Attractiveness":
             $return_class = ' When creating the original Chicago Face Database, from where this image was retrieved, participants were asked to rate the person in the image for how attractive they seemed “with respect to other people of the same race and gender” on a Likert scale (1 = Not at all; 7 = Extremely). The mean score for the image, as reported in the CFD, was selected as <span class="fw-bold">the ground truth</span> for the <span class="fw-bold">attractiveness</span> of the person in the image. The average number of raters per image across the whole dataset was 47. A score of 1-3 is categorized as Low, 3-5 as Medium, and 5-7 as High. ';
             break;
         default:
