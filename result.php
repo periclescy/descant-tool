@@ -86,13 +86,31 @@ function classTooltip($str_value): string
     return $return_class;
 }
 
-$i = 0;
+// Calculate paragraph text based on classification task
+function classParagraph($str_value): string
+{
+    switch ($str_value) {
+        case "Gender":
+            $return_class = "The same input image (above) was passed through each of the eight models, resulting in the following outputs (possible outputs: Male, Female):";
+            break;
+        case "Ethnicity":
+            $return_class = "The same input image (above) was passed through each of the eight models, resulting in the following outputs (possible outputs: Asian, Black, Latino, White):";
+            break;
+        case "Trust":
+        case "Attract":
+            $return_class = "The same input image (above) was passed through each of the eight models, resulting in the following outputs (possible outputs: Low, Medium, High):";
+            break;
+        default:
+            $return_class = "";
+    }
+    return $return_class;
+}
 
 ?>
 
 <?php require 'includes/header.php' ?>
 
-<div class="container p-3">
+<p class="container p-3">
     <h2>Select image:</h2>
     <div class="text-center">
         <div class="text-center hover-effect">
@@ -128,6 +146,9 @@ $i = 0;
 
     <div class="py-5">&nbsp;</div>
 
+    <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowdworker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
+    <p><?php echo classParagraph($classification); ?></p>
+
     <h2>Results:</h2>
     <div class="row">
         <div class="col-1">&nbsp;</div>
@@ -152,6 +173,7 @@ $i = 0;
         <div class="col-11">
             <table class="table table-bordered text-center">
                 <tbody>
+                    <?php $i = 0; ?>
                     <?php foreach($user_array as $key => $val) { ?>
                         <?php if ($key != "Ground Truth") { $i++; ?>
                         <tr>
