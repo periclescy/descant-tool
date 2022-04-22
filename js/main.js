@@ -1,6 +1,6 @@
 let preloader_time = 3;
-let loader_element = document.getElementById("loader");
-let results_element = document.getElementById("show-results");
+let loader_element = document.getElementById("loader-presentation");
+let results_element = document.getElementById("results-presentation");
 
 function showResults() {
     results_element.classList.remove("d-none");

@@ -154,9 +154,9 @@ function classParagraph($str_value): string
 
     <div class="py-3">&nbsp;</div>
 
-    <div class="spinner-border d-none" id="loader-element" role="status"></div>
+    <div class="spinner-border d-none" id="loader-presentation" role="status"></div>
 
-    <div class="d-none" id="show-results">
+    <div class="d-none" id="results-presentation">
 
         <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowdworker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
         <p><?php echo classParagraph($classification); ?></p>
