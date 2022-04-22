@@ -115,11 +115,11 @@ function resultsParagraph($str_value): string
         case "Gender":
             $return_class = "The same input image (above) was passed through each of the eight models, resulting in the following outputs (possible outputs: Male, Female):";
             break;
-        case "Ethnicity":
+        case "Race":
             $return_class = "The same input image (above) was passed through each of the eight models, resulting in the following outputs (possible outputs: Asian, Black, Latino, White):";
             break;
-        case "Trust":
-        case "Attract":
+        case "Trustworthiness":
+        case "Attractiveness":
             $return_class = "The same input image (above) was passed through each of the eight models, resulting in the following outputs (possible outputs: Low, Medium, High):";
             break;
         default:
