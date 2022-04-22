@@ -110,44 +110,50 @@ function classParagraph($str_value): string
 <?php require 'includes/header.php' ?>
 
 <div class="container p-3">
-    <h2>1. Input image:</h2>
-    <blockquote>Click on the image to select another image</blockquote>
-    <div class="text-center">
-        <div class="text-center hover-effect">
-            <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>1. Input image:</h2>
+            <blockquote>Click on the image to select another image</blockquote>
+            <div class="text-center">
+                <div class="text-center hover-effect">
+                    <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
+                </div>
+            </div>
+            <div class="py-3">&nbsp;</div>
         </div>
+
+        <div class="col-lg-6">
+            <h2>2. Classification task:</h2>
+            <blockquote>Select a Classification task.</blockquote>
+            <div class="row text-center">
+                <?php foreach($decoded_json as $class_2 => $val_2)  { ?>
+                    <?php if($class_2 == $classification)  { ?>
+                        <div class="col">
+                            <form method='post' action="result.php">
+                                <input type='hidden' name='user' value='<?php echo $user;?>' />
+                                <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
+                                <input class="btn btn-md btn-outline-secondary w-100" type="submit" value='<?php echo $class_2?>'>
+                            </form>
+                        </div>
+                    <?php } else {?>
+                        <div class="col">
+                            <form method='post' action="result.php">
+                                <input type='hidden' name='user' value='<?php echo $user;?>' />
+                                <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
+                                <input class="btn btn-md btn-secondary border-0 w-100" type="submit" value='<?php echo $class_2?>'>
+                            </form>
+                        </div>
+                    <?php } ?>
+                <?php } ?>
+
+            </div>
+            <div class="py-3">&nbsp;</div>
+        </div>
+
     </div>
 
-    <div class="py-3">&nbsp;</div>
 
-    <h2>2. Classification task</h2>
-    <blockquote>Select a Classification task:</blockquote>
-    <div class="row text-center">
-    <?php foreach($decoded_json as $class_2 => $val_2)  { ?>
-        <?php if($class_2 == $classification)  { ?>
-            <div class="col">
-                <form method='post' action="result.php">
-                    <input type='hidden' name='user' value='<?php echo $user;?>' />
-                    <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
-                    <input class="btn btn-md btn-outline-secondary w-100" type="submit" value='<?php echo $class_2?>'>
-                </form>
-            </div>
-        <?php } else {?>
-            <div class="col">
-                <form method='post' action="result.php">
-                    <input type='hidden' name='user' value='<?php echo $user;?>' />
-                    <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
-                    <input class="btn btn-md btn-secondary border-0 w-100" type="submit" value='<?php echo $class_2?>'>
-                </form>
-            </div>
-        <?php } ?>
-    <?php } ?>
-
-    </div>
-
-    <div class="py-3">&nbsp;</div>
-
-    <h2>3. Results</h2>
+    <h2>3. Results:</h2>
     <button class="btn btn-primary" type="button" id="results-button">
         Train models and show Results
     </button>
