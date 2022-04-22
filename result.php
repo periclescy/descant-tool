@@ -86,8 +86,30 @@ function classTooltip($str_value): string
     return $return_class;
 }
 
-// Calculate paragraph text based on classification task
+// Calculate classification paragraph text based on classification task
 function classParagraph($str_value): string
+{
+    switch ($str_value) {
+        case "Gender":
+            $return_class = 'The “female probability” (number of participants who indicated female gender, divided by number of people who rated the person depicted in the image) was compared to the “male probability” (vice versa for male gender) as indicated in the original Chicago Face Database, from where this image was retrieved. The average number of raters per image across the whole dataset was 47. The higher probability gender was selected as <span class="fw-bold">ground</span> truth for the <span class="fw-bold">gender</span> of the person in the image.';
+            break;
+        case "Ethnicity":
+            $return_class = 'The “Asian probability” (number of participants who indicated Asian race divided by number of people who rated the person depicted in the image) was compared to the “Black”, “Latino”, and “White probability” scores (which consist of the same calculation, for each respective race) as indicated in the original Chicago Face Database, from where this image was retrieved. The average number of raters per image across the whole dataset was 47. The highest probability race was selected as <span class="fw-bold">ground truth</span> for the <span class="fw-bold">race</span> of the person in the image.';
+            break;
+        case "Trust":
+            $return_class = 'When creating the original Chicago Face Database, from where this image was retrieved, participants were asked to rate the person in the image for how trustworthy they seemed “with respect to other people of the same race and gender” on a Likert scale (1 = Not at all; 7 = Extremely). The mean score for the image, as reported in the CFD, was selected as the <span class="fw-bold">ground truth</span> for the <span class="fw-bold">trustworthiness</span> of the person in the image. The average number of raters per image across the whole dataset was 47. A score of 1-3 is categorized as Low, 3-5 as Medium, and 5-7 as High.';
+            break;
+        case "Attract":
+            $return_class = ' When creating the original Chicago Face Database, from where this image was retrieved, participants were asked to rate the person in the image for how attractive they seemed “with respect to other people of the same race and gender” on a Likert scale (1 = Not at all; 7 = Extremely). The mean score for the image, as reported in the CFD, was selected as <span class="fw-bold">the ground truth</span> for the <span class="fw-bold">attractiveness</span> of the person in the image. The average number of raters per image across the whole dataset was 47. A score of 1-3 is categorized as Low, 3-5 as Medium, and 5-7 as High. ';
+            break;
+        default:
+            $return_class = '';
+    }
+    return $return_class;
+}
+
+// Calculate results paragraph text based on classification task
+function resultsParagraph($str_value): string
 {
     switch ($str_value) {
         case "Gender":
@@ -113,7 +135,7 @@ function classParagraph($str_value): string
     <div class="row">
         <div class="col-lg-6">
             <h2>1. Input image:</h2>
-            <blockquote>Click on the image to select another image</blockquote>
+            <blockquote>Click on the image to select another image.</blockquote>
             <div class="text-center">
                 <div class="text-center hover-effect">
                     <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
@@ -145,8 +167,8 @@ function classParagraph($str_value): string
                         </div>
                     <?php } ?>
                 <?php } ?>
-
             </div>
+            <p class="pt-2"><?php echo classParagraph($classification); ?></p>
             <div class="py-3">&nbsp;</div>
         </div>
 
@@ -167,7 +189,7 @@ function classParagraph($str_value): string
     <div class="d-none" id="results-presentation">
 
         <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowdworker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
-        <p><?php echo classParagraph($classification); ?></p>
+        <p><?php echo resultsParagraph($classification); ?></p>
 
         <div class="row">
             <div class="col-1">&nbsp;</div>

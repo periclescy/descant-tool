@@ -14,12 +14,13 @@ $chosen_classification = "Gender";
 
 <?php require 'includes/header.php' ?>
 
-<header>
-    <h1 class="display-3 py-3 text-center">DESCANT Demo Tool</h1>
-</header>
+<!--<header>-->
+<!--    <h1 class="display-3 py-3 text-center">DESCANT Demo Tool</h1>-->
+<!--</header>-->
 
 <div class="container-fluid p-3">
-    <h2 class="py-3">Please choose input image:</h2>
+    <h2>1. Input image:</h2>
+    <blockquote>Please select an image from below.</blockquote>
     <div class="row row-cols-2 row-cols-xl-5 row-cols-xxl-6 g-1 text-center">
         <?php foreach($gender as $key => $val)  { ?>
 			<div class="col">
