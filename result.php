@@ -131,23 +131,24 @@ function resultsParagraph($str_value): string
 
 <?php require 'includes/header.php' ?>
 
-<div class="container p-3">
+<div class="container-xxl p-3">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-md-6">
             <h2>1. Input image:</h2>
             <blockquote>Click on the image to select another image.</blockquote>
             <div class="text-center">
                 <div class="text-center hover-effect">
                     <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
                 </div>
+                <h6 class="display-6"><?php echo $user;?></h6>
             </div>
-            <div class="py-3">&nbsp;</div>
+            <div class="display-4 py-3">&nbsp;</div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-md-6">
             <h2>2. Classification task:</h2>
-            <blockquote>Select a Classification task.</blockquote>
-            <div class="row text-center">
+            <blockquote>Select a classification task.</blockquote>
+            <div class="row row-cols-2 row-cols-xl-4 g-2">
                 <?php foreach($decoded_json as $class_2 => $val_2)  { ?>
                     <?php if($class_2 == $classification)  { ?>
                         <div class="col">
@@ -188,7 +189,7 @@ function resultsParagraph($str_value): string
 
     <div class="d-none" id="results-presentation">
 
-        <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowdworker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
+        <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowd-worker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
         <p><?php echo resultsParagraph($classification); ?></p>
 
         <div class="row">
