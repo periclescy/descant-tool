@@ -182,9 +182,8 @@ function resultsParagraph($str_value): string
 
 
     <h2>3. Results:</h2>
-    <button class="btn btn-primary" type="button" id="results-button">
-        Train models and show Results
-    </button>
+    <blockquote>Click to train models and show results.</blockquote>
+    <button class="btn btn-success" type="button" id="results-button">Execute</button>
 
     <div class="py-3">&nbsp;</div>
     <div class="d-none text-center py-5" id="loader-presentation">
