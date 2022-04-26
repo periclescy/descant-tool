@@ -12,11 +12,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user_array = $classification_array[$user];
 }
 else {
-    $user = null;
-    $classification = null;
-    $classification_array = null;
-    $user_array = null;
-    http_response_code(500);
+    // Calculate first classification and user.
+    $firstKey = array_key_first($decoded_json);
+    $array_firstKey = $decoded_json[$firstKey];
+    $firstKey_in_array_firstKey = array_key_first($array_firstKey);
+
+    $user = $firstKey_in_array_firstKey;
+    $classification = $firstKey;
+    $classification_array = $decoded_json[$classification];
+    $user_array = $classification_array[$user];
+
 }
 
 // Calculate cell background color based on value
