@@ -30,7 +30,7 @@ $chosen_classification = "Gender";
                             <input type='hidden' name='user' value='<?php echo $key;?>' />
                             <input type='hidden' name='classification' value='<?php echo $chosen_classification;?>' />
                             <button class="btn hover-effect" type="submit">
-                                <img src="img/<?php echo $key;?>_thumb.webp" class="card-img-top" alt="<?php echo $key;?>">
+                                <img src="img/<?php echo $key;?>_thumb.jpg" class="card-img-top" alt="<?php echo $key;?>">
                             </button>
                         </form>
                     </div>
