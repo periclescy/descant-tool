@@ -11,7 +11,7 @@
     <link href="../css/main.css" rel="stylesheet"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Periklis Perikleous for CYENS Ltd.">
+    <meta name="author" content="Periklis Perikleous for CYENS CoE Ltd.">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

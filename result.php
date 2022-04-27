@@ -1,6 +1,6 @@
 <?php
 // Get the contents of the JSON file
-$data_json = file_get_contents("data.json");
+$data_json = file_get_contents("cfd_data.json");
 // Convert to array
 $decoded_json = json_decode($data_json, true);
 
