@@ -64,10 +64,10 @@ function classTooltip($str_value): string
         case "All Annotators":
             $return_class = "Model created using data annotated by all annotators.";
             break;
-        case "Males":
+        case "Men":
             $return_class = "Model created using data annotated by male annotators.";
             break;
-        case "Females":
+        case "Women":
             $return_class = "Model created using data annotated by female annotators.";
             break;
         case "Black":
@@ -136,7 +136,8 @@ function resultsParagraph($str_value): string
 
 <?php require 'includes/header.php' ?>
 
-<div class="container-xxl p-3">
+<div class="container-xxl">
+    <h1 class="display-3 text-center py-5">DESCANT Demonstration Tool</h1>
     <div class="row">
         <div class="col-md-6">
             <h2>1. Input image:</h2>
@@ -174,7 +175,7 @@ function resultsParagraph($str_value): string
                     <?php } ?>
                 <?php } ?>
             </div>
-            <p class="pt-2"><?php echo classParagraph($classification); ?></p>
+
             <div class="py-3">&nbsp;</div>
         </div>
 
@@ -192,9 +193,8 @@ function resultsParagraph($str_value): string
 
 
     <div class="d-none" id="results-presentation">
-
         <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowd-worker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
-        <p><?php echo resultsParagraph($classification); ?></p>
+        <p class="pt-2"><?php echo classParagraph($classification); ?></p>
 
         <div class="row">
             <div class="col-1">&nbsp;</div>
@@ -210,9 +210,10 @@ function resultsParagraph($str_value): string
                     <?php } ?>
                 </table>
             </div>
+            <div class="p-3"></div>
+            <p><?php echo resultsParagraph($classification); ?></p>
         </div>
 
-        <div class="py-2">&nbsp;</div>
 
         <div class="row">
             <div class="col-1"><h3 class="vertical-text fs-2">Models</h3></div>
