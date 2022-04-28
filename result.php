@@ -137,16 +137,17 @@ function resultsParagraph($str_value): string
 <?php require 'includes/header.php' ?>
 
 <div class="container-xxl">
-    <h1 class="display-3 text-center py-5">DESCANT Demonstration Tool</h1>
+    <h1 class="display-4 text-center py-3">DESCANT Demonstration Tool</h1>
     <div class="row">
         <div class="col-md-6">
             <h2>1. Input image:</h2>
             <blockquote>Click on the image to select another image.</blockquote>
+            <button class="btn btn-md btn-secondary" disabled><?php echo $user;?></button>
+            <div class="py-1">&nbsp;</div>
             <div class="text-center">
                 <div class="text-center hover-effect">
                     <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
                 </div>
-                <h6 class="display-6"><?php echo $user;?></h6>
             </div>
             <div class="display-4 py-3">&nbsp;</div>
         </div>
@@ -161,7 +162,7 @@ function resultsParagraph($str_value): string
                             <form method='post' action="result.php">
                                 <input type='hidden' name='user' value='<?php echo $user;?>' />
                                 <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
-                                <input class="btn btn-md btn-outline-secondary w-100" type="submit" value='<?php echo $class_2?>'>
+                                <input class="btn btn-md btn-secondary w-100" type="submit" value='<?php echo $class_2?>' disabled>
                             </form>
                         </div>
                     <?php } else {?>
@@ -169,28 +170,26 @@ function resultsParagraph($str_value): string
                             <form method='post' action="result.php">
                                 <input type='hidden' name='user' value='<?php echo $user;?>' />
                                 <input type='hidden' name='classification' value='<?php echo $class_2;?>' />
-                                <input class="btn btn-md btn-secondary border-0 w-100" type="submit" value='<?php echo $class_2?>'>
+                                <input class="btn btn-md btn-outline-secondary w-100" type="submit" value='<?php echo $class_2?>'>
                             </form>
                         </div>
                     <?php } ?>
                 <?php } ?>
             </div>
-
-            <div class="py-3">&nbsp;</div>
         </div>
 
     </div>
 
+    <div class="py-1">&nbsp;</div>
 
     <h2>3. Results:</h2>
     <blockquote>Click to train models and show results.</blockquote>
     <button class="btn btn-success" type="button" id="results-button">Execute</button>
 
-    <div class="py-3">&nbsp;</div>
-    <div class="d-none text-center py-5" id="loader-presentation">
+    <div class="py-1">&nbsp;</div>
+    <div class="d-none text-center pb-5" id="loader-presentation">
         <div class="spinner-border" role="status"></div>
     </div>
-
 
     <div class="d-none" id="results-presentation">
         <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowd-worker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>

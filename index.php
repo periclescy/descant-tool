@@ -1,7 +1,7 @@
 <?php require 'includes/header.php' ?>
 
     <div class="container">
-        <h1 class="display-3 text-center py-5">DESCANT Demonstration Tool</h1>
+        <h1 class="display-4 text-center py-3">DESCANT Demonstration Tool</h1>
         <div class="row">
             <div class="col-md-6">
                 <p>
