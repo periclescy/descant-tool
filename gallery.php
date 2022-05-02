@@ -17,7 +17,7 @@ $chosen_classification = "Gender";
 <div class="container-fluid p-3">
     <h2>1. Input image:</h2>
     <blockquote>Please select an image from below.</blockquote>
-    <div class="row row-cols-2 row-cols-xl-5 row-cols-xxl-6 g-1 text-center">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-1 text-center">
         <?php foreach($gender as $key => $val)  { ?>
 			<div class="col">
 				<div class="card">
