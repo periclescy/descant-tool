@@ -29,26 +29,32 @@ function classColor($str_value): string
 {
 
     switch ($str_value) {
-        case "Male":
-            $return_class = "bg-primary text-light";
-            break;
-        case "Latino":
-        case "High":
         case "Female":
-            $return_class = "bg-danger text-light";
+            $return_class = "female-style text-light";
             break;
-        case "Low":
+        case "Male":
+            $return_class = "male-style text-light";
+            break;
         case "Asian":
-            $return_class = "bg-warning";
+            $return_class = "asian-style text-light";
             break;
         case "Black":
-            $return_class = "bg-dark text-light";
+            $return_class = "black-style text-light";
+            break;
+        case "Latino":
+            $return_class = "latino-style text-light";
             break;
         case "White":
-            $return_class = "bg-light";
+            $return_class = "white-style text-dark";
+            break;
+        case "Low":
+            $return_class = "low-style text-light";
             break;
         case "Medium":
-            $return_class = "bg-success text-light";
+            $return_class = "medium-style text-light";
+            break;
+        case "High":
+            $return_class = "high-style text-light";
             break;
         default:
             $return_class = "";
@@ -136,17 +142,17 @@ function resultsParagraph($str_value): string
 
 <?php require 'includes/header.php' ?>
 
-<div class="container-xxl">
+<div class="container-xxl" xmlns="http://www.w3.org/1999/html">
     <h1 class="display-4 text-center py-3">DESCANT Demonstration Tool</h1>
     <div class="row">
         <div class="col-md-6">
             <h2>1. Input image:</h2>
-            <blockquote>Click on the image to select another image.</blockquote>
-            <button class="btn btn-md btn-secondary" disabled><?php echo $user;?></button>
+            <a href="gallery.php"><button class="btn btn-md btn-secondary">Click here to change the image</button></a>
+            <h6 class="pt-3">Current image: <?php echo $user;?></h6>
             <div class="py-1">&nbsp;</div>
             <div class="text-center">
-                <div class="text-center hover-effect">
-                    <a href="gallery.php"><img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500"></a>
+                <div class="text-center">
+                    <img src="img/<?php echo $user;?>.jpg" class="img-fluid mx-auto" alt="user-image" width="500">
                 </div>
             </div>
             <div class="display-4 py-3">&nbsp;</div>
@@ -176,14 +182,16 @@ function resultsParagraph($str_value): string
                     <?php } ?>
                 <?php } ?>
             </div>
+            <p class="py-3">The models try to predict the depicted person’s <?php echo $classification;?>.</p>
         </div>
+
 
     </div>
 
     <div class="py-1">&nbsp;</div>
 
     <h2>3. Results:</h2>
-    <blockquote>Click to train models and show results.</blockquote>
+    <blockquote>Click to show Results.</blockquote>
     <button class="btn btn-success" type="button" id="results-button">Execute</button>
 
     <div class="py-1">&nbsp;</div>
@@ -192,7 +200,6 @@ function resultsParagraph($str_value): string
     </div>
 
     <div class="d-none" id="results-presentation">
-        <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowd-worker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
         <p class="pt-2"><?php echo classParagraph($classification); ?></p>
 
         <div class="row">
@@ -210,6 +217,9 @@ function resultsParagraph($str_value): string
                 </table>
             </div>
             <div class="p-3"></div>
+
+            <p>Eight different models were trained on the same images for each task, with different (sub)sets of crowd-worker annotations. One model was trained using all the annotations for all images (# of annotations), and another one using a random subset of annotations (# of annotations). The other four were trained with annotations only from a subset of crowdworkers; e.g., the “Men” model was trained using annotations which were created by crowd-workers who identified as men, while the “White” model used only those from crowdworkers who identified as White.</p>
+
             <p><?php echo resultsParagraph($classification); ?></p>
         </div>
 

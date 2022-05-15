@@ -8,6 +8,37 @@ body {
     transform-origin: 0 0;
 }
 
+/*** Classification tasks ***/
+.female-style {
+    background-color: #dc3545!important;
+}
+.male-style {
+    background-color: #0d6efd!important;
+}
+.asian-style {
+    background-color: #0d6efd!important;
+}
+.black-style {
+    background-color: #d50cff!important;
+}
+.latino-style {
+    background-color: #34eadc!important;
+}
+.white-style {
+    background-color: #dc3545!important;
+}
+.low-style {
+    background-color: #eea2fe!important;
+}
+.medium-style {
+    background-color: #d50cff!important;
+}
+.high-style {
+    background-color: #a009bf!important;
+}
+
+/*** Effects ***/
+
 .hover-effect {
     width:100%;
     height:100%;
