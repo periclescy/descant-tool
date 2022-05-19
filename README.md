@@ -16,3 +16,4 @@ Project's webpage: https://www.cyens.org.cy/en-gb/research/projects/descant-dete
 
 ---
 <a href="https://www.pericles.cy">Periklis Perikleous</a> for <a href="https://www.cyens.org.cy">CYENS CoE</a>
+<br/>© 2022. All rights reserved.
