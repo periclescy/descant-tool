@@ -2,58 +2,53 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .vertical-text {
     margin: 200px 50%;
     transform: rotate(270deg);
     transform-origin: 0 0;
 }
 
-.text-justify {
-    text-align: justify;
-    text-justify: inter-word;
+/*** Classification tasks color. ***/
+table .female-style {
+    background-color: #dc3545;
+    color: #f8f9fa;
 }
-
-/*.iframe-container{*/
-/*    position: relative;*/
-/*    width: 100%;*/
-/*    padding-bottom: 56.25%;*/
-/*    height: 0;*/
-/*}*/
-/*.iframe-container iframe{*/
-/*    position: absolute;*/
-/*    top:0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
-
-/*** Classification tasks ***/
-.female-style {
-    background-color: #dc3545!important;
+table .male-style {
+    background-color: #0d6efd;
+    color: #f8f9fa;
 }
-.male-style {
-    background-color: #0d6efd!important;
+table .asian-style {
+    background-color: #0d6efd;
+    color: #f8f9fa;
 }
-.asian-style {
-    background-color: #0d6efd!important;
+table .black-style {
+    background-color: #d50cff;
+    color: #f8f9fa;
 }
-.black-style {
-    background-color: #d50cff!important;
+table .latino-style {
+    background-color: #34eadc;
+    color: #212529;
 }
-.latino-style {
-    background-color: #34eadc!important;
+table .white-style {
+    background-color: #dc3545;
+    color: #f8f9fa;
 }
-.white-style {
-    background-color: #dc3545!important;
+table .low-style {
+    background-color: #eea2fe;
+    color: #212529;
 }
-.low-style {
-    background-color: #eea2fe!important;
+table .medium-style {
+    background-color: #d50cff;
+    color: #f8f9fa;
 }
-.medium-style {
-    background-color: #d50cff!important;
-}
-.high-style {
-    background-color: #a009bf!important;
+table .high-style {
+    background-color: #a009bf;
+    color: #f8f9fa;
 }
 
 /*** Effects ***/

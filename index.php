@@ -13,7 +13,7 @@
                 </p>
 
                 <h5>What dataset does the tool use?</h5>
-                <p class="text-justify">
+                <p class="pb-4 text-justify">
                     The <a href="https://www.chicagofaces.org" target="_blank">Chicago Face Database (CFD)</a>
                     was developed at the University of Chicago by Debbie S. Ma, Joshua Correll, and Bernd Wittenbrink.
                     The CFD is intended for use in scientific research. It provides high-resolution,
@@ -21,9 +21,6 @@
                     Extensive norming data are available for each individual model.
                     These data include both physical attributes (e.g., face size)
                     as well as subjective ratings by independent judges (e.g., attractiveness).
-                </p>
-
-                <p class="pb-4 text-justify">
                     The main CFD set consists of images of 597 unique individuals. They include self-identified
                     Asian, Black, Latino, and White female and male models, recruited in the United States.
                     All models are represented with neutral facial expressions. A subset of the models is also available

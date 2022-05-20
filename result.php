@@ -4,24 +4,18 @@ $data_json = file_get_contents("cfd_data.json");
 // Convert to array
 $decoded_json = json_decode($data_json, true);
 
-// Get variables from POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get variables from POST.
     $user = $_POST['user'];
     $classification = $_POST['classification'];
-    $classification_array = $decoded_json[$classification];
-    $user_array = $classification_array[$user];
 }
 else {
-    // Calculate first classification and user.
-    $firstKey = array_key_first($decoded_json);
-    $array_firstKey = $decoded_json[$firstKey];
-    $firstKey_in_array_firstKey = array_key_first($array_firstKey);
-
-    $user = $firstKey_in_array_firstKey;
-    $classification = $firstKey;
-    $classification_array = $decoded_json[$classification];
-    $user_array = $classification_array[$user];
+    // Set variables - first classification and first user.
+    $classification = array_key_first($decoded_json);
+    $user = array_key_first($decoded_json[$classification]);
 }
+$classification_array = $decoded_json[$classification];
+$user_array = $classification_array[$user];
 
 // Calculate Results first paragraph, based on classification task.
 function classFirstParagraph($str_value): string
@@ -65,37 +59,36 @@ function classThirdParagraph($str_value): string
     return $return_class;
 }
 
-// Calculate cell background color based on value
+// Calculate cell background and text color based on value.
 function classColor($str_value): string
 {
-
     switch ($str_value) {
         case "Female":
-            $return_class = "female-style text-light";
+            $return_class = "female-style";
             break;
         case "Male":
-            $return_class = "male-style text-light";
+            $return_class = "male-style";
             break;
         case "Asian":
-            $return_class = "asian-style text-light";
+            $return_class = "asian-style";
             break;
         case "Black":
-            $return_class = "black-style text-light";
+            $return_class = "black-style";
             break;
         case "Latino":
-            $return_class = "latino-style text-dark";
+            $return_class = "latino-style";
             break;
         case "White":
-            $return_class = "white-style text-light";
+            $return_class = "white-style";
             break;
         case "Low":
-            $return_class = "low-style text-dark";
+            $return_class = "low-style";
             break;
         case "Medium":
-            $return_class = "medium-style text-light";
+            $return_class = "medium-style";
             break;
         case "High":
-            $return_class = "high-style text-light";
+            $return_class = "high-style";
             break;
         default:
             $return_class = "";

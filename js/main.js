@@ -8,12 +8,10 @@ let results_button = document.getElementById("results-button");
 
 /** Ple-loader functionality **/
 if (results_button) {
-
     function showResults() {
         loader_element.classList.add("d-none");
         results_element.classList.remove("d-none");
     }
-
     function preloadF() {
         loader_element.classList.remove("d-none");
         setTimeout(showResults, preloader_time*1000);
@@ -21,7 +19,5 @@ if (results_button) {
         results_button.classList.add("btn-outline-success");
         results_button.disabled = true;
     }
-
     results_button.addEventListener("click", preloadF);
-
 }
