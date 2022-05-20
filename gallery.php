@@ -1,15 +1,15 @@
 <?php
-// Get the contents of the JSON file
+// Get the contents of the JSON file.
 $data_json = file_get_contents("cfd_data.json");
 // Convert to array
 $decoded_json = json_decode($data_json, true);
 
-$gender = $decoded_json["Gender"];
-$ethnicity = $decoded_json["Ethnicity"];
-$attract = $decoded_json["Attract"];
-$trust = $decoded_json["Trust"];
+// Get the first classification name.
+$firstKey = array_key_first($decoded_json);
 
-$chosen_classification = "Gender";
+// Get first classification's array.
+$array_firstKey = $decoded_json[$firstKey];
+
 ?>
 
 <?php require 'includes/header.php' ?>
@@ -18,13 +18,13 @@ $chosen_classification = "Gender";
     <h2>1. Input image:</h2>
     <blockquote>Please select an image from below.</blockquote>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-1 text-center">
-        <?php foreach($gender as $key => $val)  { ?>
+        <?php foreach($array_firstKey as $key => $val)  { ?>
 			<div class="col">
 				<div class="card">
 					<div class="card-body">
                         <form method='post' action="result.php">
                             <input type='hidden' name='user' value='<?php echo $key;?>' />
-                            <input type='hidden' name='classification' value='<?php echo $chosen_classification;?>' />
+                            <input type='hidden' name='classification' value='<?php echo $firstKey;?>' />
                             <button class="btn hover-effect" type="submit">
                                 <img src="img/<?php echo $key;?>_thumb.jpg" class="card-img-top" alt="<?php echo $key;?>">
                             </button>
