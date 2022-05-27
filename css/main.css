@@ -1,5 +1,4 @@
 /****** Classification tasks color. ******/
-
 table .female-style {
     background-color: #dc3545;
     color: #f8f9fa;
@@ -38,18 +37,15 @@ table .high-style {
 }
 
 /****** Global Fonts. ******/
-
 body {
     font-family: 'Noto Sans', sans-serif;
 }
-
 .text-justify {
     text-align: justify;
     text-justify: inter-word;
 }
 
 /****** Vertical text style. ******/
-
 .vertical-text {
     margin: 200px 50%;
     transform: rotate(270deg);
@@ -57,7 +53,6 @@ body {
 }
 
 /****** Effects on gallery images. ******/
-
 .hover-effect {
     width:100%;
     height:100%;

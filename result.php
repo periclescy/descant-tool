@@ -139,7 +139,7 @@ function classTooltip($str_value): string
     <div class="row">
         <div class="col-md-6">
             <h2>1. Input image:</h2>
-            <a href="gallery.php"><button class="btn btn-md btn-secondary">Click here to change the image</button></a>
+            <a href="gallery.php"><button id="change-image-button" class="btn btn-md btn-secondary">Click here to change the image</button></a>
             <h6 class="pt-3">Current image: <?php echo $user;?></h6>
             <div class="py-1">&nbsp;</div>
             <div class="text-center">
@@ -215,22 +215,25 @@ function classTooltip($str_value): string
 
         <div class="row">
             <div class="col-1"><h3 class="vertical-text fs-2">Models</h3></div>
-                <div class="col-11">
-                    <table class="table table-bordered text-center">
-                        <tbody>
-                            <?php $i = 0; ?>
-                            <?php foreach($user_array as $key => $val) { ?>
-                                <?php if ($key != "Ground Truth") { $i++; ?>
-                                <tr>
-                                    <td class="w-50" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $key;?></td>
-                                    <td class="w-50 <?php echo classColor($val);?>" id="<?php echo $i;?>" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $val;?></td>
-                                </tr>
-                                <?php } ?>
-                            <?php } ?>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="col-11">
+                <table class="table table-bordered text-center">
+                    <tbody>
+                    <?php $i = 0; ?>
+                    <?php foreach($user_array as $key => $val) { ?>
+                        <?php if ($key != "Ground Truth") { $i++; ?>
+                            <tr>
+                                <td class="w-50" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $key;?></td>
+                                <td class="w-50 <?php echo classColor($val);?>" id="<?php echo $i;?>" data-bs-toggle="tooltip" data-bs-html="true" title="<?php echo classTooltip($key);?>"><?php echo $val;?></td>
+                            </tr>
+                        <?php } ?>
+                    <?php } ?>
+                    </tbody>
+                </table>
             </div>
+            <div class="text-center col-md-8 offset-md-2 col-xl-6 offset-xl-3 pb-5">
+                <a href="/" class="btn btn-success w-50 d-none" id="questionnaire-button">Questionnaire</a>
+            </div>
+        </div>
 
         </div>
     </div>
